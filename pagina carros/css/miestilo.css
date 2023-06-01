@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #09b5e0;
+}
+
+.name{
+    width: 100%;
+    height: 300px;
+    background: #d8d0d0;
+    transform: skewY(0deg);
+}
+
+.name .content{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 25%;
+}
+
+.name .content .p-1{
+    color: #0c0c0c;
+    font-family: 'Festive', cursive;
+    font-weight: bolder;
+    font-size: 60px;
+    transform: skewY(0deg);
+    margin-bottom: 0;
+}

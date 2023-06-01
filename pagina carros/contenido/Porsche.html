@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/miestilo.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="../imagenes/porsche/logo.jpg">
+    <title>Porsche</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/52272d22a1.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#hide").click(function(){
+          $("td").hide();
+        });
+        $("#show").click(function(){
+          $("td").show();
+        });
+      });
+      </script>
+</head>
+<body>
+    <div class="name">
+        <div class="content">
+            <p class="p-1">Porsche <img src="../imagenes/porsche/logo.jpg"></p>
+        </div>
+    </div>
+    <div Class="container">
+        <div class="row">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../imagenes/porsche/718 spyder.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../imagenes/porsche/718 cayman gt4.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../imagenes/porsche/GT3 911.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../imagenes/porsche/Porsche Panamera.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../imagenes/porsche/taycan.jpg" class="d-block w-100" alt="..." width="400" height="550">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../imagenes/porsche/turbo S 911.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <div class="row">
+          <div class="col">
+              <h1 class="centrar">Porsche Panamera</h1>
+              <img src="../imagenes/porsche/Porsche Panamera.jpg" width="350" height="250">
+              <p>es un automóvil de lujo del segmento F, producido por el fabricante alemán de automóviles Porsche. Se trata de un automóvil sedán de cuatro puertas, con diseño de carrocería estilo fastback. Es el primer automóvil de 4 puertas desarrollado y producido por Porsche, a la vez de ser uno de los varios modelos de la casa Porsche con motor delantero, junto a los cupés 924, 944, 968, 928 y el SUV Cayenne. Presenta dos versiones de transmisión, siendo estas de tracción trasera o tracción total.</p>
+          </div>
+          <div class="col">
+              <h1 class="centrar">Porsche 718 cayman</h1>
+              <img src="../imagenes/porsche/718 cayman gt4.jpg" width="350" height="250">
+              <p>es un automóvil deportivo de lujo de dos asientos con tracción trasera y motor en posición central producido por Porsche AG de Alemania desde el año 2006. Es un cupé derivado del convertible Boxster. A mediados de 2016 el Cayman pasó a denominarse 718 Cayman.
+
+                Hasta ahora se ha fabricado en tres generaciones:
+                
+                Porsche Cayman (Tipo 987c) (2005-2013)
+                Porsche Cayman (Tipo 981c) (2013-2016)
+                Porsche 718 Cayman (Tipo 982) (desde 2016)</p>
+          </div>
+          <div class="col">
+              <h1 class="centrar">Porsche Taycan</h1>
+              <img src="../imagenes/porsche/taycan.jpg" width="350" height="250">
+              <p>denominado internamente como J1 y como Mission E en su presentación, es un automóvil eléctrico de altas prestaciones desarrollado por la empresa automotriz alemana Porsche, filial del Grupo Volkswagen. Se trata de un automóvil ejecutivo sedán de cuatro puertas y cuatro plazas, dentro de la categoría de automóvil deportivo. El Mission E saldría al mercado antes de 2020</p>
+          </div>
+      </div>
+    </div>
+    <div class="container my-3">
+      <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <div class="table-responsive">
+                  <table class="table table-dark">
+                      <thead>
+                          <tr>
+                              <th class="centered">#</th>
+                              <th class="centered">Nombre</th>
+                              <th class="centered">Email</th>
+                              <th class="centered">Comentario</th>
+                          </tr>
+                      </thead>
+                      <tbody id="tableBody_Comments"></tbody>
+                  </table>
+              </div>
+          </div>
+      </div>
+  </div>
+  <script src="../js/consultasLaravel.js"></script>
+    <nav>
+      <a href="https://api.whatsapp.com/send?phone=573112360170&text=Hola,%20estoy%20%20interesado%20en%20realizar%20una%20cotización" target="_blank"><i class="fa-brands fa-whatsapp-square" alt="Whatsapp"></i></a>
+      <a href="mailto:jc.ospinach@gmail.com"><i class="fa-solid fa-square-envelope" alt="Correo" ></i></a>
+      <a href="https://www.facebook.com/?stype=lo&jlou=AffL813UP7IWXzzDAmVHCkt4dG2hJ25nExTcoBrmWqiSGP3amPFuyw3o9v6WgcOHU5YnuiHD86u7diYYzeFBJHIa&smuh=29301&lh=Ac9DjDSZgwgWl4m3JS4">  <i class="fa-brands fa-facebook" alt="Facebook"></i></a>
+    </nav>
+  <script src="../js/bootstrap.bundle.js"></script> 
+  <button id="hide">Hide</button>
+  <button id="show">Show</button>
+</body>
+</html>
